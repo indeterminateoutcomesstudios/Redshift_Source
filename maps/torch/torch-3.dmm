@@ -2038,6 +2038,7 @@
 "ef" = (
 /obj/structure/ladder,
 /obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/storage/expedition)
 "eg" = (
@@ -2222,6 +2223,7 @@
 "ev" = (
 /obj/structure/ladder,
 /obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftstarboard)
 "ew" = (
@@ -3677,6 +3679,7 @@
 /obj/structure/ladder,
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/effect/floor_decal/industrial/warning,
+/obj/structure/catwalk,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/engineering/hardstorage)
 "hp" = (
@@ -9249,6 +9252,7 @@
 /obj/machinery/status_display{
 	pixel_x = -32
 	},
+/obj/effect/catwalk_plated,
 /turf/simulated/floor/tiled/steel_grid,
 /area/engineering/foyer)
 "tw" = (
@@ -9546,6 +9550,7 @@
 	dir = 4;
 	pixel_x = -21
 	},
+/obj/effect/catwalk_plated,
 /turf/simulated/floor/tiled/steel_grid,
 /area/engineering/foyer)
 "uk" = (
@@ -12347,6 +12352,7 @@
 "Bs" = (
 /obj/structure/ladder,
 /obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/storage/cargo)
 "Bt" = (
@@ -12512,6 +12518,7 @@
 "BJ" = (
 /obj/structure/ladder,
 /obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftport)
 "BK" = (
@@ -13931,6 +13938,7 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
+/obj/effect/catwalk_plated,
 /turf/simulated/floor/tiled/steel_grid,
 /area/engineering/foyer)
 "EP" = (
@@ -16211,6 +16219,7 @@
 	dir = 4;
 	pixel_x = -32
 	},
+/obj/effect/catwalk_plated,
 /turf/simulated/floor/tiled/steel_grid,
 /area/engineering/foyer)
 "PC" = (

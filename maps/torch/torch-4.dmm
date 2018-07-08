@@ -3030,6 +3030,7 @@
 "agr" = (
 /obj/structure/ladder,
 /obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftstarboard)
 "ags" = (
@@ -3393,6 +3394,7 @@
 "ahb" = (
 /obj/structure/ladder,
 /obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralstarboard)
 "ahw" = (
@@ -9321,6 +9323,7 @@
 	dir = 6
 	},
 /obj/structure/ladder,
+/obj/effect/catwalk_plated,
 /turf/simulated/floor/tiled/steel_grid,
 /area/hallway/primary/firstdeck/center)
 "aBP" = (
@@ -13184,6 +13187,7 @@
 "aOM" = (
 /obj/structure/ladder,
 /obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/foreport)
 "aON" = (
@@ -13632,6 +13636,7 @@
 "aPU" = (
 /obj/structure/ladder,
 /obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralport)
 "aPV" = (
@@ -13971,6 +13976,7 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 4
 	},
+/obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftport)
 "aRe" = (
@@ -17300,6 +17306,7 @@
 	name = "Medical Reception";
 	req_access = list(5)
 	},
+/obj/effect/catwalk_plated,
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
 "cAb" = (
@@ -23555,6 +23562,7 @@
 	pixel_x = 32;
 	pixel_y = 0
 	},
+/obj/effect/catwalk_plated,
 /turf/simulated/floor/tiled/steel_grid,
 /area/hallway/primary/firstdeck/center)
 "ltb" = (
@@ -27585,6 +27593,7 @@
 "rQb" = (
 /obj/structure/ladder,
 /obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/effect/catwalk_plated,
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
 "rRb" = (
@@ -28922,6 +28931,7 @@
 	pixel_y = -20;
 	pixel_z = 0
 	},
+/obj/effect/catwalk_plated,
 /turf/simulated/floor/tiled/steel_grid,
 /area/hallway/primary/firstdeck/center)
 "wRs" = (
