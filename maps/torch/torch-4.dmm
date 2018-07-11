@@ -8536,7 +8536,8 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/aft)
 "ayM" = (
-/obj/structure/bed/chair{
+/obj/structure/bed/chair/padded/blue{
+	icon_state = "chair_preview";
 	dir = 1
 	},
 /obj/effect/floor_decal/corner/blue{
@@ -11644,7 +11645,8 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/structure/bed/chair/office/dark{
+/obj/structure/bed/chair/padded/brown{
+	icon_state = "chair_preview";
 	dir = 4
 	},
 /turf/simulated/floor/lino,
@@ -11665,7 +11667,8 @@
 	dir = 9;
 	pixel_y = 0
 	},
-/obj/structure/bed/chair/office/dark{
+/obj/structure/bed/chair/office/comfy/brown{
+	icon_state = "comfyofficechair_preview";
 	dir = 8
 	},
 /turf/simulated/floor/lino,
@@ -16806,7 +16809,9 @@
 /obj/machinery/computer/cryopod{
 	pixel_x = -32
 	},
-/obj/structure/bed/chair{
+/obj/structure/bed/chair/shuttle{
+	tag = "icon-shuttle_chair_preview (NORTH)";
+	icon_state = "shuttle_chair_preview";
 	dir = 1
 	},
 /turf/simulated/floor/plating,
@@ -16819,7 +16824,9 @@
 /obj/machinery/computer/cryopod{
 	pixel_x = -32
 	},
-/obj/structure/bed/chair{
+/obj/structure/bed/chair/shuttle{
+	tag = "icon-shuttle_chair_preview (NORTH)";
+	icon_state = "shuttle_chair_preview";
 	dir = 1
 	},
 /turf/simulated/floor/plating,
@@ -16842,15 +16849,14 @@
 /obj/machinery/computer/cryopod{
 	pixel_x = -32
 	},
-/obj/structure/bed/chair{
+/obj/structure/bed/chair/shuttle{
+	tag = "icon-shuttle_chair_preview (NORTH)";
+	icon_state = "shuttle_chair_preview";
 	dir = 1
 	},
 /turf/simulated/floor/plating,
 /area/shuttle/escape_pod14/station)
 "bQb" = (
-/obj/structure/bed/chair{
-	dir = 1
-	},
 /obj/machinery/light/small{
 	dir = 8
 	},
@@ -16866,12 +16872,14 @@
 	pixel_y = 0;
 	tag_door = "escape_pod_12_hatch"
 	},
+/obj/structure/bed/chair/shuttle{
+	tag = "icon-shuttle_chair_preview (NORTH)";
+	icon_state = "shuttle_chair_preview";
+	dir = 1
+	},
 /turf/simulated/floor/plating,
 /area/shuttle/escape_pod12/station)
 "bRb" = (
-/obj/structure/bed/chair{
-	dir = 1
-	},
 /obj/machinery/light/small{
 	dir = 8
 	},
@@ -16887,12 +16895,14 @@
 	pixel_y = 0;
 	tag_door = "escape_pod_13_hatch"
 	},
+/obj/structure/bed/chair/shuttle{
+	tag = "icon-shuttle_chair_preview (NORTH)";
+	icon_state = "shuttle_chair_preview";
+	dir = 1
+	},
 /turf/simulated/floor/plating,
 /area/shuttle/escape_pod13/station)
 "bSb" = (
-/obj/structure/bed/chair{
-	dir = 1
-	},
 /obj/machinery/light/small{
 	dir = 8
 	},
@@ -16908,10 +16918,14 @@
 	pixel_y = 0;
 	tag_door = "escape_pod_14_hatch"
 	},
+/obj/structure/bed/chair/shuttle{
+	tag = "icon-shuttle_chair_preview (NORTH)";
+	icon_state = "shuttle_chair_preview";
+	dir = 1
+	},
 /turf/simulated/floor/plating,
 /area/shuttle/escape_pod14/station)
 "bTb" = (
-/obj/structure/bed/chair,
 /obj/item/device/radio/intercom{
 	dir = 4;
 	pixel_x = -21
@@ -16927,6 +16941,7 @@
 	pixel_y = 0;
 	tag_door = "escape_pod_15_hatch"
 	},
+/obj/structure/bed/chair/shuttle,
 /turf/simulated/floor/plating,
 /area/shuttle/escape_pod15/station)
 "bTl" = (
@@ -16937,7 +16952,6 @@
 /turf/simulated/wall/r_wall/prepainted,
 /area/security/opscheck)
 "bUb" = (
-/obj/structure/bed/chair,
 /obj/item/device/radio/intercom{
 	dir = 4;
 	pixel_x = -21
@@ -16953,10 +16967,10 @@
 	pixel_y = 0;
 	tag_door = "escape_pod_16_hatch"
 	},
+/obj/structure/bed/chair/shuttle,
 /turf/simulated/floor/plating,
 /area/shuttle/escape_pod16/station)
 "bVb" = (
-/obj/structure/bed/chair,
 /obj/item/device/radio/intercom{
 	dir = 4;
 	pixel_x = -21
@@ -16972,6 +16986,7 @@
 	pixel_y = 0;
 	tag_door = "escape_pod_17_hatch"
 	},
+/obj/structure/bed/chair/shuttle,
 /turf/simulated/floor/plating,
 /area/shuttle/escape_pod17/station)
 "bWb" = (
@@ -16982,7 +16997,7 @@
 /obj/machinery/computer/cryopod{
 	pixel_x = 32
 	},
-/obj/structure/bed/chair,
+/obj/structure/bed/chair/shuttle,
 /turf/simulated/floor/plating,
 /area/shuttle/escape_pod15/station)
 "bXb" = (
@@ -16993,7 +17008,7 @@
 /obj/machinery/computer/cryopod{
 	pixel_x = 32
 	},
-/obj/structure/bed/chair,
+/obj/structure/bed/chair/shuttle,
 /turf/simulated/floor/plating,
 /area/shuttle/escape_pod16/station)
 "bYb" = (
@@ -17004,7 +17019,7 @@
 /obj/machinery/computer/cryopod{
 	pixel_x = 32
 	},
-/obj/structure/bed/chair,
+/obj/structure/bed/chair/shuttle,
 /turf/simulated/floor/plating,
 /area/shuttle/escape_pod17/station)
 "bZb" = (
@@ -17354,10 +17369,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/surgery)
-"cCx" = (
-/obj/effect/floor_decal/industrial/outline/yellow,
-/turf/space,
-/area/space)
 "cDb" = (
 /obj/machinery/optable,
 /obj/effect/floor_decal/floordetail/edgedrain{
@@ -21157,10 +21168,12 @@
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralport)
 "hPt" = (
-/obj/item/weapon/stool/padded,
 /obj/machinery/firealarm{
 	dir = 8;
 	pixel_x = -24
+	},
+/obj/structure/bed/chair{
+	dir = 4
 	},
 /turf/simulated/floor/tiled,
 /area/assembly/chargebay)
@@ -23182,7 +23195,9 @@
 /turf/simulated/floor/tiled,
 /area/assembly/robotics)
 "kQb" = (
-/obj/item/weapon/stool/padded,
+/obj/structure/bed/chair{
+	dir = 4
+	},
 /turf/simulated/floor/tiled,
 /area/assembly/chargebay)
 "kRb" = (
@@ -23220,7 +23235,8 @@
 /turf/simulated/wall/prepainted,
 /area/maintenance/substation/firstdeck)
 "kSj" = (
-/obj/structure/bed/chair{
+/obj/structure/bed/chair/padded/blue{
+	icon_state = "chair_preview";
 	dir = 1
 	},
 /obj/effect/floor_decal/scglogo{
@@ -23790,7 +23806,8 @@
 /turf/simulated/floor/carpet,
 /area/medical/mentalhealth)
 "lIb" = (
-/obj/structure/bed/chair{
+/obj/structure/bed/chair/padded/blue{
+	icon_state = "chair_preview";
 	dir = 1
 	},
 /obj/effect/floor_decal/corner/blue{
@@ -23905,7 +23922,8 @@
 /turf/simulated/floor/tiled/dark,
 /area/command/conference)
 "lWb" = (
-/obj/structure/bed/chair{
+/obj/structure/bed/chair/padded/blue{
+	icon_state = "chair_preview";
 	dir = 1
 	},
 /obj/effect/floor_decal/scglogo{
@@ -23929,7 +23947,8 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/infirmary)
 "lYb" = (
-/obj/structure/bed/chair{
+/obj/structure/bed/chair/padded/blue{
+	icon_state = "chair_preview";
 	dir = 1
 	},
 /obj/effect/floor_decal/scglogo{
@@ -23954,7 +23973,8 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/structure/bed/chair{
+/obj/structure/bed/chair/padded/blue{
+	icon_state = "chair_preview";
 	dir = 1
 	},
 /obj/effect/floor_decal/corner/blue{
@@ -23986,7 +24006,8 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/infirmreception)
 "mdb" = (
-/obj/structure/bed/chair{
+/obj/structure/bed/chair/padded/blue{
+	icon_state = "chair_preview";
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -24008,7 +24029,8 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/command/conference)
 "mfb" = (
-/obj/structure/bed/chair{
+/obj/structure/bed/chair/padded/blue{
+	icon_state = "chair_preview";
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -24023,7 +24045,8 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/structure/bed/chair{
+/obj/structure/bed/chair/padded/blue{
+	icon_state = "chair_preview";
 	dir = 1
 	},
 /obj/effect/floor_decal/corner/blue{
@@ -24100,7 +24123,8 @@
 /turf/simulated/floor/tiled/dark,
 /area/chapel/main)
 "mlw" = (
-/obj/structure/bed/chair/office/dark{
+/obj/structure/bed/chair/padded/red{
+	icon_state = "chair_preview";
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
@@ -25077,6 +25101,10 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/structure/bed/chair/office/comfy/red{
+	icon_state = "comfyofficechair_preview";
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark,
 /area/rnd/checkpoint)
 "nRb" = (
@@ -25208,7 +25236,7 @@
 	d2 = 4;
 	icon_state = "1-4"
 	},
-/obj/structure/bed/chair/office/dark,
+/obj/structure/bed/chair/padded/red,
 /turf/simulated/floor/tiled/dark,
 /area/security/opscheck)
 "oab" = (
@@ -26718,7 +26746,8 @@
 /turf/simulated/floor/lino,
 /area/vacant/office)
 "qya" = (
-/obj/structure/bed/chair{
+/obj/structure/bed/chair/padded/blue{
+	icon_state = "chair_preview";
 	dir = 1
 	},
 /obj/effect/floor_decal/scglogo{
@@ -37011,7 +37040,7 @@ hBr
 hBr
 aaa
 aaa
-cCx
+aaa
 aaa
 aaa
 aaa
