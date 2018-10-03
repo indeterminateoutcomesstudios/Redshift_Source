@@ -2,18 +2,18 @@ FROM mloc6/byond:511
 
 ARG BUILD_ARGS
 
-COPY . /bs12
-RUN chown -R nobody:nogroup /bs12
+COPY . /rs
+RUN chown -R nobody:nogroup /rs13
 
 USER nobody
 
-WORKDIR /bs12
+WORKDIR /rs13
 
-RUN scripts/dm.sh $BUILD_ARGS baystation12.dme
+RUN scripts/dm.sh $BUILD_ARGS redshift.dme
 
 EXPOSE 8000
-VOLUME /bs12/data
-VOLUME /bs12/config
+VOLUME /rs13/data
+VOLUME /rs13/config
 
 ENTRYPOINT ["DreamDaemon"]
-CMD ["baystation12.dmb", "8000", "-invisible", "-trusted"]
+CMD ["redshift.dmb", "8000", "-invisible", "-trusted"]
