@@ -1,26 +1,14 @@
 Redshift
-Creative Commons (CC0)
-
-To the extent possible under law, The Redshift Community has waived all copyright and related or neighboring rights to any portions of the Redshift code without prior license under the creative commons CC0 Universal License version 1.0, which can be found in full in LICENSE-CC0.html.
-
-Baystation12
-Copyright (C) 2010-2018 Baystation12 and tgstation13.
-
-Commits with a git authorship date prior to `1527984000 +0000` (2018/06/03) are licensed under the GNU Affero General Public License version 3, which can be found in full in LICENSE-AGPL3.txt.
+Copyright (C) 2010-2018 Redshift, Baystation12 and tgstation13
 
 Commits with a git authorship date prior to `1420675200 +0000` (2015/01/08 00:00) are licensed under the GNU General Public License version 3, which can be found in full in LICENSE-GPL3.txt.
 
-All commits whose authorship dates are not prior to `1420675200 +0000` and are authored prior to `1527984000 +0000` are assumed to be licensed under AGPL v3 unless specified otherwise. All commits whose authorship dates are not prior to `1527984000 +0000` are assumed to be released under creative commons CC0 1.0 Universal unless specified otherwise.
+All commits whose authorship dates are prior to `1420675200 +0000`  are assumed to be licensed under AGPL v3 unless specified otherwise.
 
-Portions of this program are free software: you can redistribute them and/or modify
-them under the terms of the GNU Affero General Public License as published by
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
 
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
 You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
-You should have received a copy of the CC0 Universal License along with this program. If not, see <https://creativecommons.org/publicdomain/zero/1.0/legalcode>
