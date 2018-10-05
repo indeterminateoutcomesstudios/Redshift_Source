@@ -2,7 +2,7 @@ FROM mloc6/byond:511
 
 ARG BUILD_ARGS
 
-COPY . /rs
+COPY . /rs13
 RUN chown -R nobody:nogroup /rs13
 
 USER nobody
