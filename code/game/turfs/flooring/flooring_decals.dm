@@ -525,6 +525,14 @@ var/list/floor_decals = list()
 /obj/effect/floor_decal/corner/lightgrey/bordercee
 	icon_state = "bordercolorcee"
 
+/obj/effect/floor_decal/stripe
+	name = "floor stripe"
+	icon_state = "stripe-white"
+	alpha = 229
+
+/obj/effect/floor_decal/stripe/t
+	icon_state = "stripe-t-white"
+
 /obj/effect/floor_decal/spline/plain
 	name = "spline - plain"
 	icon_state = "spline_plain"
