@@ -4,15 +4,15 @@
 	path = "folly"
 	flags = MAP_HAS_BRANCH
 
-	station_levels = list()
-	contact_levels = list()
-	player_levels = list()
+	station_levels = list(1,2,3)
+	contact_levels = list(1,2,3)
+	player_levels = list(1,2,3,4)
 	admin_levels = list()
-	empty_levels = list()
-	accessible_z_levels = list()
+	empty_levels = list(4)
+	accessible_z_levels = list("1"=1, "2"=1, "3"=1, "4"=8)
 	overmap_size = 16
-	overmap_event_areas = 16
-	usable_email_tlds = list("oes.co")
+	overmap_event_areas = 15
+	usable_email_tlds = list("transit.ceres", "chainmail.ceres")
 
 	allowed_spawns = list("Cryogenic Storage", "Cyborg Storage")
 	default_spawn = "Cryogenic Storage"
@@ -27,20 +27,10 @@
 
 	map_admin_faxes = list("Jovian Trade Conglomerate", "Office of the Postmaster Admiral")
 
-	//These should probably be moved into the evac controller...
-	shuttle_docked_message = "Attention all hands: Jump preparation complete. The bluespace drive is now spooling up, secure all stations for departure. Time to jump: approximately %ETD%."
-	shuttle_leaving_dock = "Attention all hands: Jump initiated, exiting bluespace in %ETA%."
-	shuttle_called_message = "Attention all hands: Jump sequence initiated. Transit procedures are now in effect. Jump in %ETA%."
-	shuttle_recall_message = "Attention all hands: Jump sequence aborted, return to normal operating conditions."
-
-	evac_controller_type = /datum/evacuation_controller/starship
-
 	default_law_type = /datum/ai_laws/solgov
 	use_overmap = 1
-	num_exoplanets = 0
-	planet_size = list(129,129)
 
-	away_site_budget = 3
+	away_site_budget = 2
 
 	id_hud_icons = 'maps/torch/icons/assignment_hud.dmi'
 
