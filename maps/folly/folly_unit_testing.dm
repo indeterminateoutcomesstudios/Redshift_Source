@@ -1,4 +1,4 @@
-/datum/map/torch
+/datum/map/folly
 	// Unit test exemptions
 	apc_test_exempt_areas = list(
 		/area/engineering/atmos/storage = NO_SCRUBBER|NO_VENT,
@@ -54,6 +54,11 @@
 		/area/vacant/missile = NO_SCRUBBER|NO_VENT,
 		/area/vacant/monitoring = NO_SCRUBBER|NO_VENT,
 		/area/vacant/office = 0,
+		/area/exoplanet          = NO_SCRUBBER|NO_VENT|NO_APC,
+		/area/exoplanet/desert   = NO_SCRUBBER|NO_VENT|NO_APC,
+		/area/exoplanet/grass    = NO_SCRUBBER|NO_VENT|NO_APC,
+		/area/exoplanet/snow     = NO_SCRUBBER|NO_VENT|NO_APC,
+		/area/exoplanet/garbage  = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/smugglers/base = NO_SCRUBBER,
 		/area/smugglers/dorms = NO_SCRUBBER|NO_VENT,
 		/area/smugglers/office = NO_SCRUBBER|NO_VENT,
@@ -71,6 +76,11 @@
 		/area/mine/unexplored,
 		/area/centcom/control,
 		/area/maintenance/exterior,
+		/area/exoplanet,
+		/area/exoplanet/desert,
+		/area/exoplanet/grass,
+		/area/exoplanet/snow,
+		/area/exoplanet/garbage,
 		/area/marooned/marooned_snow,
 		/area/icarus/vessel,
 		/area/icarus/open,
@@ -97,7 +107,14 @@
 		/area/turbolift/seconddeck,
 		/area/turbolift/thirddeck,
 		/area/turbolift/fourthdeck,
+		/area/exoplanet,
+		/area/exoplanet/desert,
+		/area/exoplanet/grass,
+		/area/exoplanet/snow,
+		/area/exoplanet/garbage,
 		/area/template_noop,
+		/area/map_template,
+		/area/map_template/little_house,
 	)
 
 	// not an away site? you probably want to be using area_usage_test_exempted_areas

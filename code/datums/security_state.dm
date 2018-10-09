@@ -177,12 +177,12 @@
 
 /decl/security_level/default/switching_up_to()
 	if(up_description)
-		security_announcement_up.Announce(up_description, "Attention! Alert level elevated to [name]!")
+		security_announcement_up.Announce(up_description, "Attention! Now operating at [name]!")
 	notify_station()
 
 /decl/security_level/default/switching_down_to()
 	if(down_description)
-		security_announcement_down.Announce(down_description, "Attention! Alert level changed to [name]!")
+		security_announcement_down.Announce(down_description, "Attention! Now operating at [name]!")
 	notify_station()
 
 /decl/security_level/default/proc/notify_station()
@@ -192,7 +192,7 @@
 	post_status("alert")
 
 /decl/security_level/default/code_green
-	name = "code green"
+	name = "OP-3"
 
 	light_max_bright = 0.25
 	light_inner_range = 0.1
@@ -204,10 +204,10 @@
 	overlay_alarm = "alarm_green"
 	overlay_status_display = "status_display_green"
 
-	down_description = "All threats to the station have passed. Security may not have weapons visible, privacy laws are once again fully enforced."
+	down_description = "Normal operations may now resume. Level three operating procedures are in effect."
 
 /decl/security_level/default/code_blue
-	name = "code blue"
+	name = "OP-2"
 
 	light_max_bright = 0.5
 	light_inner_range = 0.1
@@ -218,11 +218,11 @@
 	overlay_alarm = "alarm_blue"
 	overlay_status_display = "status_display_blue"
 
-	up_description = "The station has received reliable information about possible hostile activity on the station. Security staff may have weapons visible, random searches are permitted."
-	down_description = "The immediate threat has passed. Security may no longer have weapons drawn at all times, but may continue to have them visible. Random searches are still allowed."
+	up_description = "An advisory notice is active. Level two operating procedures are in effect."
+	down_description = "Emergency operations have ceased. An advisory notice is in effect. Level two operating procedures are in effect."
 
 /decl/security_level/default/code_red
-	name = "code red"
+	name = "OP-1"
 
 	light_max_bright = 0.5
 	light_inner_range = 0.1
@@ -233,11 +233,11 @@
 	overlay_alarm = "alarm_red"
 	overlay_status_display = "status_display_red"
 
-	up_description = "There is an immediate serious threat to the station. Security may have weapons unholstered at all times. Random searches are allowed and advised."
-	down_description = "The self-destruct mechanism has been deactivated, there is still however an immediate serious threat to the station. Security may have weapons unholstered at all times, random searches are allowed and advised."
+	up_description = "An emergency notice is active! Level one operating procedures are in effect."
+	down_description = "An emergency notice is active! Level one operating procedures are in effect. Level zero operating procedures are no longer in effect."
 
 /decl/security_level/default/code_delta
-	name = "code delta"
+	name = "OP-0"
 
 	light_max_bright = 0.75
 	light_inner_range = 0.1
@@ -251,5 +251,5 @@
 	var/static/datum/announcement/priority/security/security_announcement_delta = new(do_log = 0, do_newscast = 1, new_sound = sound('sound/effects/siren.ogg'))
 
 /decl/security_level/default/code_delta/switching_up_to()
-	security_announcement_delta.Announce("The self-destruct mechanism has been engaged. All crew are instructed to obey all instructions given by heads of staff. Any violations of these orders can be punished by death. This is not a drill.", "Attention! Delta security level reached!")
+	security_announcement_delta.Announce("A catastrophic threat to regional safety has been detected aboard the facility. The self-destruct mechanism has been activated, and regional authorities have been prohibited from approaching the facility. The tether will be disconnected shortly. This is not a drill.", "Attention! Level zero operating procedures are in effect!")
 	notify_station()

@@ -37,8 +37,6 @@
 
 	default_law_type = /datum/ai_laws/solgov
 	use_overmap = 1
-	num_exoplanets = 1
-	planet_size = list(129,129)
 
 	away_site_budget = 3
 
