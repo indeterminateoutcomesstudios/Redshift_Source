@@ -1187,6 +1187,7 @@ window "outputwindow"
 		size = 640x480
 		anchor1 = none
 		anchor2 = none
+		background-color = #1c1c1c
 		saved-params = "pos;size;is-minimized;is-maximized"
 		titlebar = false
 		statusbar = false
@@ -1200,6 +1201,7 @@ window "outputwindow"
 		size = 640x480
 		anchor1 = 0,0
 		anchor2 = 100,100
+        background-color = #1c1c1c
 		is-default = true
 		saved-params = "max-lines"
 		style = ".system {color:#ff0000;}"
@@ -1212,6 +1214,7 @@ window "rpane"
 		size = 640x480
 		anchor1 = none
 		anchor2 = none
+		background-color = #262626
 		saved-params = "pos;size;is-minimized;is-maximized"
 		is-pane = true
 	elem "rpanewindow"
@@ -1220,6 +1223,7 @@ window "rpane"
 		size = 640x499
 		anchor1 = 0,0
 		anchor2 = 100,100
+		background-color = #262626
 		saved-params = "splitter"
 		right = "outputwindow"
 		is-vert = false
@@ -1229,6 +1233,7 @@ window "rpane"
 		size = 60x16
 		anchor1 = none
 		anchor2 = none
+		background-color = none
 		saved-params = "is-checked"
 		text = "Rules"
 		command = "rules"
@@ -1239,6 +1244,7 @@ window "rpane"
 		size = 67x16
 		anchor1 = none
 		anchor2 = none
+		background-color = none
 		saved-params = "is-checked"
 		text = "Changelog"
 		command = "Changelog"
@@ -1249,6 +1255,7 @@ window "rpane"
 		size = 67x16
 		anchor1 = none
 		anchor2 = none
+		background-color = none
 		saved-params = "is-checked"
 		text = "Lore"
 		command = "Lore"
@@ -1259,6 +1266,7 @@ window "rpane"
 		size = 60x16
 		anchor1 = none
 		anchor2 = none
+		background-color = none
 		saved-params = "is-checked"
 		text = "Forum"
 		command = "forum"
@@ -1269,6 +1277,7 @@ window "rpane"
 		size = 60x16
 		anchor1 = none
 		anchor2 = none
+		background-color = none
 		saved-params = "is-checked"
 		text = "Wiki"
 		command = "wiki"
@@ -1279,6 +1288,7 @@ window "rpane"
 		size = 60x16
 		anchor1 = none
 		anchor2 = none
+		background-color = none
 		is-visible = false
 		saved-params = "is-checked"
 		text = "Text"
@@ -1292,6 +1302,7 @@ window "rpane"
 		size = 60x16
 		anchor1 = none
 		anchor2 = none
+		background-color = none
 		is-visible = false
 		saved-params = "is-checked"
 		text = "Browser"
@@ -1304,6 +1315,7 @@ window "rpane"
 		size = 60x16
 		anchor1 = none
 		anchor2 = none
+		background-color = none
 		is-visible = false
 		saved-params = "is-checked"
 		text = "Info"
@@ -1327,7 +1339,7 @@ window "browserwindow"
 		size = 640x499
 		anchor1 = 0,0
 		anchor2 = 100,100
-		background-color = #ffffff
+		background-color = #1c1c1c
 		is-default = true
 		saved-params = ""
 		on-show = ".winset\"rpane.infob.is-visible=true?rpane.infob.pos=130,0;rpane.textb.is-visible=true;rpane.browseb.is-visible=true;rpane.browseb.is-checked=true;rpane.rpanewindow.pos=0,30;rpane.rpanewindow.size=0x0;rpane.rpanewindow.left=browserwindow\""
