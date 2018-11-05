@@ -111,9 +111,6 @@
 								if(get_dir(chassis,ore)&chassis.dir)
 									ore.Move(ore_box)
 				else if(istype(target, /turf/simulated/floor/asteroid))
-					for(var/turf/simulated/floor/asteroid/M in range(chassis,1))
-						if(get_dir(chassis,M)&chassis.dir)
-							M.gets_dug()
 					log_message("Drilled through \the [target]")
 					if(locate(/obj/item/mecha_parts/mecha_equipment/tool/hydraulic_clamp) in chassis.equipment)
 						var/obj/structure/ore_box/ore_box = locate(/obj/structure/ore_box) in chassis:cargo
@@ -164,8 +161,6 @@
 								if(get_dir(chassis,ore)&chassis.dir)
 									ore.Move(ore_box)
 				else if(istype(target,/turf/simulated/floor/asteroid))
-					for(var/turf/simulated/floor/asteroid/M in range(target,1))
-						M.gets_dug()
 					log_message("Drilled through \the [target]")
 					if(locate(/obj/item/mecha_parts/mecha_equipment/tool/hydraulic_clamp) in chassis.equipment)
 						var/obj/structure/ore_box/ore_box = locate(/obj/structure/ore_box) in chassis:cargo

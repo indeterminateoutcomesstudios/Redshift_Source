@@ -5,7 +5,7 @@ var/list/mining_floors = list()
 /turf/unsimulated/mineral
 	name = "impassable rock"
 	icon = 'icons/turf/walls.dmi'
-	icon_state = "rock-dark"
+	icon_state = "rockc"
 	blocks_air = 1
 	density = 1
 	opacity = 1
@@ -13,7 +13,7 @@ var/list/mining_floors = list()
 /turf/simulated/mineral //wall piece
 	name = "rock"
 	icon = 'icons/turf/walls.dmi'
-	icon_state = "rock"
+	icon_state = "rockc"
 	initial_gas = null
 	opacity = 1
 	density = 1
@@ -60,7 +60,7 @@ var/list/mining_floors = list()
 /turf/simulated/mineral/update_icon(var/update_neighbors)
 	if(!mineral)
 		SetName(initial(name))
-		icon_state = "rock"
+		icon_state = "rockc"
 	else
 		SetName("[mineral.display_name] deposit")
 
@@ -72,7 +72,7 @@ var/list/mining_floors = list()
 			var/turf/simulated/floor/asteroid/T = turf_to_check
 			T.updateMineralOverlays()
 		else if(istype(turf_to_check,/turf/space) || istype(turf_to_check,/turf/simulated/floor))
-			var/image/rock_side = image('icons/turf/walls.dmi', "rock_side", dir = turn(direction, 180))
+			var/image/rock_side = image('icons/turf/walls.dmi', "rockc_side", dir = turn(direction, 180))
 			rock_side.turf_decal_layerise()
 			switch(direction)
 				if(NORTH)
@@ -414,18 +414,17 @@ var/list/mining_floors = list()
 // Setting icon/icon_state initially will use these values when the turf is built on/replaced.
 // This means you can put grass on the asteroid etc.
 /turf/simulated/floor/asteroid
-	name = "sand"
-	icon = 'icons/turf/flooring/asteroid.dmi'
-	icon_state = "asteroid"
-	base_name = "sand"
-	base_desc = "Gritty and unpleasant."
-	base_icon = 'icons/turf/flooring/asteroid.dmi'
-	base_icon_state = "asteroid"
+	name = "ice dust"
+	icon = 'icons/turf/snow.dmi'
+	icon_state = "snow0"
+	base_name = "ice dust"
+	base_desc = "Glassy dust."
+	base_icon = 'icons/turf/snow.dmi'
+	base_icon_state = "snow0"
 
 	initial_flooring = null
 	initial_gas = null
 	temperature = TCMB
-	var/dug = 0       //0 = has not yet been dug, 1 = has already been dug
 	var/overlay_detail
 	has_resources = 1
 
@@ -433,8 +432,7 @@ var/list/mining_floors = list()
 	if (!mining_floors["[src.z]"])
 		mining_floors["[src.z]"] = list()
 	mining_floors["[src.z]"] += src
-	if(prob(20))
-		overlay_detail = "asteroid[rand(0,9)]"
+	icon_state = "snow[rand(0,12)]"
 
 /turf/simulated/floor/asteroid/Destroy()
 	if (mining_floors["[src.z]"])
@@ -442,14 +440,6 @@ var/list/mining_floors = list()
 	return ..()
 
 /turf/simulated/floor/asteroid/ex_act(severity)
-	switch(severity)
-		if(3.0)
-			return
-		if(2.0)
-			if (prob(70))
-				gets_dug()
-		if(1.0)
-			gets_dug()
 	return
 
 /turf/simulated/floor/asteroid/is_plating()
@@ -458,36 +448,6 @@ var/list/mining_floors = list()
 /turf/simulated/floor/asteroid/attackby(obj/item/weapon/W as obj, mob/user as mob)
 	if(!W || !user)
 		return 0
-
-	var/list/usable_tools = list(
-		/obj/item/weapon/shovel,
-		/obj/item/weapon/pickaxe/diamonddrill,
-		/obj/item/weapon/pickaxe/drill,
-		/obj/item/weapon/pickaxe/borgdrill
-		)
-
-	var/valid_tool
-	for(var/valid_type in usable_tools)
-		if(istype(W,valid_type))
-			valid_tool = 1
-			break
-
-	if(valid_tool)
-		if (dug)
-			to_chat(user, "<span class='warning'>This area has already been dug</span>")
-			return
-
-		var/turf/T = user.loc
-		if (!(istype(T)))
-			return
-
-		to_chat(user, "<span class='warning'>You start digging.</span>")
-		playsound(user.loc, 'sound/effects/rustle1.ogg', 50, 1)
-
-		if(!do_after(user,40, src)) return
-
-		to_chat(user, "<span class='notice'>You dug a hole.</span>")
-		gets_dug()
 
 	else if(istype(W,/obj/item/weapon/storage/ore))
 		var/obj/item/weapon/storage/ore/S = W
@@ -506,18 +466,6 @@ var/list/mining_floors = list()
 		..(W,user)
 	return
 
-/turf/simulated/floor/asteroid/proc/gets_dug()
-
-	if(dug)
-		return
-
-	for(var/i=0;i<(rand(3)+2);i++)
-		new/obj/item/weapon/ore/glass(src)
-
-	dug = 1
-	icon_state = "asteroid_dug"
-	return
-
 /turf/simulated/floor/asteroid/proc/updateMineralOverlays(var/update_neighbors)
 
 	overlays.Cut()
@@ -531,15 +479,9 @@ var/list/mining_floors = list()
 			overlays += aster_edge
 
 		if(istype(get_step(src, step_overlays[direction]), /turf/simulated/mineral))
-			var/image/rock_wall = image('icons/turf/walls.dmi', "rock_side", dir = step_overlays[direction])
+			var/image/rock_wall = image('icons/turf/walls.dmi', "rockc_side", dir = step_overlays[direction])
 			rock_wall.turf_decal_layerise()
 			overlays += rock_wall
-
-	//todo cache
-	if(overlay_detail)
-		var/image/floor_decal = image(icon = 'icons/turf/flooring/decals.dmi', icon_state = overlay_detail)
-		floor_decal.turf_decal_layerise()
-		overlays |= floor_decal
 
 	if(update_neighbors)
 		var/list/all_step_directions = list(NORTH,NORTHEAST,EAST,SOUTHEAST,SOUTH,SOUTHWEST,WEST,NORTHWEST)
