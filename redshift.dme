@@ -2585,6 +2585,7 @@
 #include "maps\away\away_sites.dm"
 #include "maps\away_sites_testing\away_sites_testing_define.dm"
 #include "maps\example\example_define.dm"
+#include "maps\folly\ceres\harlan.dmm"
 #include "maps\overmap_example\overmap_example_define.dm"
 #include "maps\random_ruins\space_ruins\space_ruins.dm"
 #include "maps\torch\torch.dm"
