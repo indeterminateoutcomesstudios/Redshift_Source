@@ -4,15 +4,15 @@
 	path = "folly"
 	flags = MAP_HAS_BRANCH
 
-	station_levels = list(1,2,3)
-	contact_levels = list(1,2,3)
-	player_levels = list(1,2,3,4)
+	station_levels = list(1,2)
+	contact_levels = list(1,2)
+	player_levels = list(1,2)
 	admin_levels = list()
-	empty_levels = list(4)
-	accessible_z_levels = list("1"=1, "2"=1, "3"=1, "4"=8)
-	overmap_size = 16
-	overmap_event_areas = 15
+	empty_levels = list()
+	accessible_z_levels = list()
+	base_turf_by_z = list("1" = /turf/simulated/floor/asteroid, "2" = /turf/simulated/open)
 	usable_email_tlds = list("transit.ceres", "chainmail.ceres")
+
 
 	allowed_spawns = list("Cryogenic Storage", "Cyborg Storage")
 	default_spawn = "Cryogenic Storage"
@@ -28,9 +28,7 @@
 	map_admin_faxes = list("Jovian Trade Conglomerate", "Office of the Postmaster Admiral")
 
 	default_law_type = /datum/ai_laws/solgov
-	use_overmap = 1
-
-	away_site_budget = 2
+	use_overmap = 0
 
 	id_hud_icons = 'maps/torch/icons/assignment_hud.dmi'
 
